@@ -1,0 +1,17 @@
+export const skillMarquee = [
+  "Python",
+  "FastAPI",
+  "Aiogram 3.x",
+  "PostgreSQL",
+  "SQLite",
+  "SQL",
+  "Autonomous Agents",
+  "MCP",
+  "Prompt Engineering",
+  "LLM Routing",
+  "HTML5",
+  "CSS3",
+  "Git",
+  "Linux VPS",
+  "Ollama",
+];

@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "Davronbek O'rishboev — AI Software Engineer & Full-Stack dasturchi",
+    "description": "AI Software Engineer, Prompt Architect va Full-Stack dasturchi. Python, SQL va avtonom AI agentlar bilan biznes jarayonlarini avtomatlashtiraman."
+  },
+  "nav": {
+    "home": "Bosh sahifa",
+    "about": "Men haqimda",
+    "projects": "Loyihalar",
+    "contact": "Aloqa",
+    "menu": "Menyu",
+    "close": "Yopish"
+  },
+  "hero": {
+    "greeting": "Salom, men",
+    "firstName": "Davronbek",
+    "lastName": "O'rishboev",
+    "role": "AI Software Engineer · Prompt Architect · Full-Stack dasturchi",
+    "description": "Klassik dasturlash (Python, SQL) va generativ AI kuchini birlashtirib, biznes jarayonlarini avtomatlashtiruvchi aqlli agentlar va raqamli mahsulotlar yarataman.",
+    "primaryCta": "Loyihalarni ko'rish",
+    "secondaryCta": "Bog'lanish",
+    "badge": "Yangi loyihalar uchun ochiq",
+    "scroll": "Pastga suring"
+  },
+  "about": {
+    "eyebrow": "Men haqimda",
+    "title": "G'oyadan ishlaydigan AI mahsulotgacha",
+    "body": [
+      "AI Software Engineer va Full-Stack dasturchiman. Python, SQL va HTML/CSS asosidagi fundamental bilimlarni zamonaviy generativ AI — avtonom agentlar, MCP va prompt engineering — bilan birlashtiraman.",
+      "Shunchaki chat-bot ulash bilan cheklanmayman: biznes jarayonlarini to'liq avtomatlashtiruvchi, mustaqil qaror qabul qiluvchi agentlar ekotizimini loyihalayman. Har bir loyiha xavfsizlik, tezlik va skalalanuvchanlik talablari bilan boshlanadi."
+    ],
+    "statsTitle": "Qisqacha",
+    "stats": [
+      { "value": "3", "label": "asosiy loyiha" },
+      { "value": "60%", "label": "token tejamkorligi" },
+      { "value": "10+", "label": "texnologiya" }
+    ],
+    "skillsTitle": "Asosiy arsenal",
+    "skillsNote": "Kundalik ish jarayonimda ishlatadigan asosiy texnologiyalar."
+  },
+  "projects": {
+    "eyebrow": "Tanlangan ishlar",
+    "title": "Loyihalar",
+    "description": "Har biri aniq biznes muammosini hal qiladi: logistika, soliq konsaltingi va onlayn buyurtma.",
+    "viewAll": "Barcha loyihalar",
+    "viewCase": "Loyihani ko'rish",
+    "back": "Orqaga",
+    "role": "Rol",
+    "year": "Yil",
+    "stack": "Texnologiyalar",
+    "highlights": "Asosiy natijalar",
+    "visit": "Saytga o'tish",
+    "listTitle": "Barcha loyihalar",
+    "listDescription": "AI agentlar, avtomatlashtirish va full-stack dasturlash bo'yicha amaliy ishlar.",
+    "filterAll": "Hammasi",
+    "empty": "Bu bo'limda hozircha loyiha yo'q.",
+    "next": "Keyingi loyiha"
+  },
+  "contact": {
+    "eyebrow": "Aloqa",
+    "title": "Loyihangizni birga quramiz",
+    "description": "AI agentlar, avtomatlashtirish yoki to'liq veb-mahsulot — g'oyangizni texnik talablarga aylantirish uchun yozing. 24 soat ichida javob beraman.",
+    "name": "Ismingiz",
+    "email": "Email manzilingiz",
+    "message": "Xabar",
+    "namePlaceholder": "Ism Familiya",
+    "emailPlaceholder": "siz@example.com",
+    "messagePlaceholder": "Loyihangiz haqida qisqacha...",
+    "send": "Xabar yuborish",
+    "note": "Tugma pochta dasturingizni ochadi — hech qanday ma'lumot serverga yuborilmaydi.",
+    "emailLabel": "Email",
+    "socialLabel": "Ijtimoiy tarmoqlar",
+    "locationLabel": "Manzil"
+  },
+  "footer": {
+    "rights": "Barcha huquqlar himoyalangan.",
+    "built": "Next.js, Three.js va GSAP bilan qurilgan",
+    "backToTop": "Yuqoriga"
+  },
+  "notFound": {
+    "title": "Sahifa topilmadi",
+    "description": "Kechirasiz, siz izlagan sahifa mavjud emas yoki ko'chirilgan.",
+    "back": "Bosh sahifaga qaytish"
+  },
+  "credits": {
+    "title": "Mualliflik va litsenziyalar",
+    "description": "Ushbu saytda ishlatilgan ochiq manbalar va ularning litsenziyalari.",
+    "items": [
+      { "name": "Three.js", "license": "MIT", "url": "https://threejs.org" },
+      { "name": "React Three Fiber", "license": "MIT", "url": "https://r3f.docs.pmnd.rs" },
+      { "name": "GSAP", "license": "GSAP Standard License", "url": "https://gsap.com" },
+      { "name": "Next.js", "license": "MIT", "url": "https://nextjs.org" },
+      { "name": "Tailwind CSS", "license": "MIT", "url": "https://tailwindcss.com" }
+    ]
+  }
+}

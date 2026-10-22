@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "Davronbek O'rishboev — AI Software Engineer & Full-Stack Developer",
+    "description": "AI Software Engineer, Prompt Architect and Full-Stack developer. I automate business processes with Python, SQL and autonomous AI agents."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "firstName": "Davronbek",
+    "lastName": "O'rishboev",
+    "role": "AI Software Engineer · Prompt Architect · Full-Stack Developer",
+    "description": "I combine classic engineering (Python, SQL) with generative AI to build intelligent agents and digital products that automate business processes.",
+    "primaryCta": "View projects",
+    "secondaryCta": "Get in touch",
+    "badge": "Open for new projects",
+    "scroll": "Scroll down"
+  },
+  "about": {
+    "eyebrow": "About me",
+    "title": "From idea to a working AI product",
+    "body": [
+      "I am an AI Software Engineer and Full-Stack developer. I combine fundamentals in Python, SQL and HTML/CSS with modern generative AI — autonomous agents, MCP and prompt engineering.",
+      "I do not stop at plugging in a chat bot: I design ecosystems of agents that automate business processes end to end and make independent decisions. Every project starts with security, speed and scalability requirements."
+    ],
+    "statsTitle": "At a glance",
+    "stats": [
+      { "value": "3", "label": "core projects" },
+      { "value": "60%", "label": "token savings" },
+      { "value": "10+", "label": "technologies" }
+    ],
+    "skillsTitle": "Core arsenal",
+    "skillsNote": "The main technologies I use in my day-to-day workflow."
+  },
+  "projects": {
+    "eyebrow": "Selected work",
+    "title": "Projects",
+    "description": "Each one solves a concrete business problem: logistics, tax consulting and online ordering.",
+    "viewAll": "All projects",
+    "viewCase": "View project",
+    "back": "Back",
+    "role": "Role",
+    "year": "Year",
+    "stack": "Stack",
+    "highlights": "Key outcomes",
+    "visit": "Visit website",
+    "listTitle": "All projects",
+    "listDescription": "Hands-on work across AI agents, automation and full-stack development.",
+    "filterAll": "All",
+    "empty": "No projects in this category yet.",
+    "next": "Next project"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let's build your product together",
+    "description": "AI agents, automation or a complete web product — write to me and we will turn your idea into technical requirements. I reply within 24 hours.",
+    "name": "Your name",
+    "email": "Your email",
+    "message": "Message",
+    "namePlaceholder": "Full name",
+    "emailPlaceholder": "you@example.com",
+    "messagePlaceholder": "Tell me briefly about your project...",
+    "send": "Send message",
+    "note": "This opens your email app — nothing is sent to a server.",
+    "emailLabel": "Email",
+    "socialLabel": "Social",
+    "locationLabel": "Location"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "built": "Built with Next.js, Three.js and GSAP",
+    "backToTop": "Back to top"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "Sorry, the page you are looking for does not exist or has moved.",
+    "back": "Back to home"
+  },
+  "credits": {
+    "title": "Credits and licenses",
+    "description": "Open source tools used on this site and their licenses.",
+    "items": [
+      { "name": "Three.js", "license": "MIT", "url": "https://threejs.org" },
+      { "name": "React Three Fiber", "license": "MIT", "url": "https://r3f.docs.pmnd.rs" },
+      { "name": "GSAP", "license": "GSAP Standard License", "url": "https://gsap.com" },
+      { "name": "Next.js", "license": "MIT", "url": "https://nextjs.org" },
+      { "name": "Tailwind CSS", "license": "MIT", "url": "https://tailwindcss.com" }
+    ]
+  }
+}
