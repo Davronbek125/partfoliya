@@ -11,8 +11,11 @@ export const site = {
     en: "Tashkent, Uzbekistan",
   },
   socials: [
-    { label: "GitHub", href: "https://github.com/Davronbek125" },
-  ],
+    { label: "GitHub", href: "https://github.com/Davronbek125", icon: "github" },
+    { label: "Telegram", href: "https://t.me/a123455", icon: "telegram" },
+    // Instagram username paydo bo'lganda quyidagini oching:
+    // { label: "Instagram", href: "https://instagram.com/USERNAME", icon: "instagram" },
+  ] as const,
   url: "https://partfolya.alwaysdata.net",
   copyrightYear: 2026,
 } as const;

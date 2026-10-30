@@ -7,6 +7,8 @@ import { useEffect, useState } from "react";
 import { localeShort, locales, type Locale } from "@/i18n/config";
 import { site } from "@/content/site";
 
+import { SocialIcon } from "@/components/ui/SocialIcon";
+
 type Nav = {
   home: string;
   about: string;
@@ -86,7 +88,7 @@ export function Header({ locale, nav, name }: HeaderProps) {
             </span>
             <span className="absolute -bottom-3 -right-3 size-8 rounded-full bg-coral blur-[2px] transition-transform duration-500 group-hover:scale-125" />
           </span>
-          <span className="hidden font-display text-sm font-semibold tracking-tight sm:block">
+          <span className="hidden font-display text-sm font-semibold tracking-tight sm:block md:hidden lg:block">
             {name}
           </span>
         </Link>
@@ -112,6 +114,21 @@ export function Header({ locale, nav, name }: HeaderProps) {
         </nav>
 
         <div className="flex items-center gap-2">
+          <div className="hidden items-center gap-1.5 lg:flex">
+            {site.socials.map((social) => (
+              <a
+                key={social.label}
+                href={social.href}
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label={social.label}
+                title={social.label}
+                className="grid size-9 place-items-center rounded-full border border-ink/10 bg-cream/60 text-ink-soft transition-colors hover:border-ink/25 hover:bg-ink hover:text-cream focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
+              >
+                <SocialIcon name={social.icon} />
+              </a>
+            ))}
+          </div>
           <div
             className="hidden items-center rounded-full border border-ink/10 bg-cream/60 p-1 md:flex"
             aria-label="Language"
@@ -234,8 +251,9 @@ export function Header({ locale, nav, name }: HeaderProps) {
                     href={social.href}
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="inline-flex rounded-full border border-ink/15 px-3.5 py-1.5 text-xs font-medium text-ink-soft transition-colors hover:border-ink/40 hover:text-ink"
+                    className="inline-flex items-center gap-2 rounded-full border border-ink/15 px-3.5 py-1.5 text-xs font-medium text-ink-soft transition-colors hover:border-ink/40 hover:text-ink"
                   >
+                    <SocialIcon name={social.icon} className="size-3.5" />
                     {social.label}
                   </a>
                 </li>
