@@ -23,6 +23,9 @@ if ($LASTEXITCODE -ne 0) { throw "Build muvaffaqiyatsiz" }
 
 Write-Host "2/4  Standalone paket..." -ForegroundColor Cyan
 npm run pack
+if ($LASTEXITCODE -ne 0) {
+  throw "Paketlash muvaffaqiyatsiz. `dist/standalone` boshqa jarayon tomonidan band bo'lishi mumkin (masalan lokal `node server.js`)."
+}
 
 Write-Host "3/4  Arxiv..." -ForegroundColor Cyan
 if (Test-Path "dist/partfolya-standalone.tgz") { Remove-Item "dist/partfolya-standalone.tgz" -Force }

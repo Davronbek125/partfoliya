@@ -69,15 +69,6 @@ export function About({ locale, about, showHeading = true }: AboutProps) {
                   className="pointer-events-none absolute inset-0 rounded-[2rem] ring-1 ring-inset ring-white/15"
                 />
               </div>
-
-              <div className="absolute -bottom-5 -right-3 rounded-2xl border border-ink/10 bg-cream px-5 py-4 shadow-card">
-                <p className="font-display text-2xl font-bold leading-none">
-                  {about.stats[0]?.value}
-                </p>
-                <p className="mt-1 text-[11px] font-medium uppercase tracking-[0.14em] text-ink-soft">
-                  {about.stats[0]?.label}
-                </p>
-              </div>
             </div>
           </Reveal>
 
