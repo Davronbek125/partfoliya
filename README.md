@@ -115,13 +115,13 @@ Alwaysdata'da: **Web → Sites → Environment** bo'limiga ayni o'zgaruvchilarni
 
 ## Deploy
 
-Sayt **Alwaysdata**'da Node.js sayt sifatida joylashadi: <https://partfoliya.alwaysdata.net>.
+Sayt **Alwaysdata**'da Node.js sayt sifatida joylashadi: <https://partfolya.alwaysdata.net>.
 
 1. Kodni GitHub'ga push qiling: `git push origin main`.
 2. Alwaysdata panelida **Web → Sites → Add a site** → **Node.js** turini tanlang.
 3. Sozlamalar:
-   - **Address**: `partfoliya.alwaysdata.net`
-   - **Working directory**: loyiha papkasi (masalan `/home/partfoliya/www/partfoliya`)
+   - **Address**: `partfolya.alwaysdata.net`
+   - **Working directory**: `/home/partfolya/www/partfolya`
    - **Node.js version**: 20.9 yoki yuqori
    - **Build command**: `npm ci && npm run build`
    - **Start command**: `npm run start -- -p $PORT -H 0.0.0.0`
@@ -129,7 +129,7 @@ Sayt **Alwaysdata**'da Node.js sayt sifatida joylashadi: <https://partfoliya.alw
 4. SSH orqali kodni torting (`git clone` yoki `git pull`) va build buyrug'ini bir marta qo'lda ishga tushiring.
 5. Saytni restart qiling va tekshiring: `/uz`, `/en`, loyiha sahifalari, `/api/chat`, contact forma.
 
-`src/content/site.ts` dagi `url` allaqachon `https://partfoliya.alwaysdata.net` — u sitemap, `robots.txt`, `metadataBase` va OG rasm uchun ishlatiladi. Domen o'zgarsa, faqat shu qiymatni yangilang.
+`src/content/site.ts` dagi `url` allaqachon `https://partfolya.alwaysdata.net` — u sitemap, `robots.txt`, `metadataBase` va OG rasm uchun ishlatiladi. Domen o'zgarsa, faqat shu qiymatni yangilang.
 
 ## Eslatma
 

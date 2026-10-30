@@ -13,7 +13,7 @@ export const site = {
   socials: [
     { label: "GitHub", href: "https://github.com/Davronbek125" },
   ],
-  url: "https://partfoliya.alwaysdata.net",
+  url: "https://partfolya.alwaysdata.net",
   copyrightYear: 2026,
 } as const;
 
