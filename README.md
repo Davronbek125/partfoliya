@@ -117,17 +117,40 @@ Alwaysdata'da: **Web → Sites → Environment** bo'limiga ayni o'zgaruvchilarni
 
 Sayt **Alwaysdata**'da Node.js sayt sifatida joylashadi: <https://partfolya.alwaysdata.net>.
 
-1. Kodni GitHub'ga push qiling: `git push origin main`.
-2. Alwaysdata panelida **Web → Sites → Add a site** → **Node.js** turini tanlang.
-3. Sozlamalar:
-   - **Address**: `partfolya.alwaysdata.net`
-   - **Working directory**: `/home/partfolya/www/partfolya`
-   - **Node.js version**: 20.9 yoki yuqori
-   - **Build command**: `npm ci && npm run build`
-   - **Start command**: `npm run start -- -p $PORT -H 0.0.0.0`
-   - **Environment**: `NODE_ENV=production`, `NEXT_TELEMETRY_DISABLED=1` va AI kalitlari
-4. SSH orqali kodni torting (`git clone` yoki `git pull`) va build buyrug'ini bir marta qo'lda ishga tushiring.
-5. Saytni restart qiling va tekshiring: `/uz`, `/en`, loyiha sahifalari, `/api/chat`, contact forma.
+Muhim: free reja **256 MB RAM** beradi, `npm ci && npm run build` serverda OOM bilan o'chiriladi (tekshirilgan). Shuning uchun build **lokalda** qilinadi, serverga faqat tayyor standalone nusxa yuklanadi (≈35 MB, runtime ≈100 MB).
+
+**Paneldagi sozlamalar** (Web → Sites → `partfolya.alwaysdata.net`):
+
+| Maydon | Qiymat |
+|---|---|
+| Type | Node.js |
+| Working directory | `/home/partfolya/www/partfolya` |
+| Node.js version | 22 yoki 24 |
+| Command | `node server.js` |
+| Environment | `NEXT_TELEMETRY_DISABLED=1` + AI kalitlari (ixtiyoriy) |
+
+**Deploy qilish:**
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/deploy.ps1
+```
+
+Skript: `npm run build` → `npm run pack` (standalone + `public` + `.next/static`) → arxiv → `scp` → serverda ochish. Oxirida panelda **↻ restart** bosiladi.
+
+Qo'lda:
+
+```bash
+npm run build && npm run pack
+tar -czf dist/partfolya-standalone.tgz -C dist/standalone .
+scp -i ~/.ssh/alwaysdata_partfoliya dist/partfolya-standalone.tgz partfolya@ssh-partfolya.alwaysdata.net:www/partfolya/app.tgz
+ssh -i ~/.ssh/alwaysdata_partfoliya partfolya@ssh-partfolya.alwaysdata.net \
+  "cd ~/www/partfolya && tar -xzf app.tgz && rm app.tgz && mv -f server.js server-real.js"
+scp -i ~/.ssh/alwaysdata_partfoliya deploy/server.js partfolya@ssh-partfolya.alwaysdata.net:www/partfolya/server.js
+```
+
+`deploy/server.js` — Next'ning `server.js` ini dual-stack (`::`) interfeysda ishga tushiruvchi o'ram. Alwaysdata upstream IPv6 manzilga ulanadi; usiz sayt **502** qaytaradi.
+
+Tekshirish: `/uz`, `/en`, loyiha sahifalari, `/api/chat`, `sitemap.xml`, `robots.txt`.
 
 `src/content/site.ts` dagi `url` allaqachon `https://partfolya.alwaysdata.net` — u sitemap, `robots.txt`, `metadataBase` va OG rasm uchun ishlatiladi. Domen o'zgarsa, faqat shu qiymatni yangilang.
 
