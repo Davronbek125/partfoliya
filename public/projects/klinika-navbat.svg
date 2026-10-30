@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" fill="none" role="img" aria-label="Klinika Navbat appointment queue illustration">
+  <defs>
+    <linearGradient id="bg" x1="60" y1="40" x2="1520" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#052E2B"/>
+      <stop offset="0.5" stop-color="#0E8F7E"/>
+      <stop offset="1" stop-color="#0B6FA8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(1180 180) rotate(135) scale(700 580)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8CFFE3" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#8CFFE3" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0H0V72" stroke="#fff" stroke-opacity="0.055"/>
+    </pattern>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="28" stdDeviation="30" flood-color="#021B1A" flood-opacity="0.5"/>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1100" fill="url(#bg)"/>
+  <rect width="1600" height="1100" fill="url(#grid)"/>
+  <ellipse cx="1190" cy="180" rx="640" ry="500" fill="url(#glow)"/>
+
+  <!-- medical crosses -->
+  <g fill="#fff" fill-opacity="0.07">
+    <path d="M250 240H272V262H294V284H272V306H250V284H228V262H250V240Z"/>
+    <path d="M1390 760H1408V778H1426V796H1408V814H1390V796H1372V778H1390V760Z"/>
+    <path d="M1500 300H1514V314H1528V328H1514V342H1500V328H1486V314H1500V300Z"/>
+    <path d="M160 880H174V894H188V908H174V922H160V908H146V894H160V880Z"/>
+  </g>
+
+  <!-- calendar panel -->
+  <g filter="url(#shadow)">
+    <rect x="900" y="246" width="528" height="566" rx="34" fill="#042F2C" fill-opacity="0.72" stroke="#fff" stroke-opacity="0.14"/>
+    <text x="940" y="312" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" letter-spacing="3">KUNLIK JADVAL</text>
+    <text x="940" y="342" fill="#8CFFE3" fill-opacity="0.6" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="2">OKTABR · 2026</text>
+    <circle cx="1372" cy="300" r="20" fill="#fff" fill-opacity="0.08"/>
+    <path d="M1362 300H1382M1372 290V310" stroke="#8CFFE3" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- days -->
+    <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+      <g fill="#fff" fill-opacity="0.08">
+        <rect x="940" y="376" width="54" height="64" rx="14"/>
+        <rect x="1000" y="376" width="54" height="64" rx="14"/>
+        <rect x="1120" y="376" width="54" height="64" rx="14"/>
+        <rect x="1180" y="376" width="54" height="64" rx="14"/>
+        <rect x="1240" y="376" width="54" height="64" rx="14"/>
+        <rect x="1300" y="376" width="54" height="64" rx="14"/>
+      </g>
+      <rect x="1060" y="376" width="54" height="64" rx="14" fill="#C6F24E"/>
+      <g fill="#fff" fill-opacity="0.5" font-size="12" font-weight="700">
+        <text x="967" y="400">DU</text>
+        <text x="1027" y="400">SE</text>
+        <text x="1147" y="400">PA</text>
+        <text x="1207" y="400">JU</text>
+        <text x="1267" y="400">SH</text>
+        <text x="1327" y="400">YA</text>
+      </g>
+      <text x="1087" y="400" fill="#0A3C2E" font-size="12" font-weight="700">CH</text>
+      <g fill="#fff" fill-opacity="0.75" font-size="20" font-weight="700">
+        <text x="967" y="428">21</text>
+        <text x="1027" y="428">22</text>
+        <text x="1147" y="428">24</text>
+        <text x="1207" y="428">25</text>
+        <text x="1267" y="428">26</text>
+        <text x="1327" y="428">27</text>
+      </g>
+      <text x="1087" y="428" fill="#0A3C2E" font-size="20" font-weight="700">23</text>
+    </g>
+
+    <!-- time slots -->
+    <g font-family="Arial, Helvetica, sans-serif">
+      <rect x="940" y="486" width="448" height="52" rx="26" fill="#fff" fill-opacity="0.06"/>
+      <text x="972" y="519" fill="#fff" fill-opacity="0.55" font-size="17" font-weight="700">09:00</text>
+      <text x="1340" y="519" fill="#fff" fill-opacity="0.35" font-size="14" text-anchor="end">BO'SH</text>
+
+      <rect x="940" y="550" width="448" height="52" rx="26" fill="#0B7A75"/>
+      <circle cx="972" cy="576" r="9" fill="#C6F24E"/>
+      <text x="996" y="583" fill="#fff" font-size="17" font-weight="700">09:30</text>
+      <text x="1340" y="583" fill="#C6F24E" font-size="14" font-weight="700" text-anchor="end">TANLANDI</text>
+
+      <rect x="940" y="614" width="448" height="52" rx="26" fill="#fff" fill-opacity="0.06"/>
+      <text x="972" y="647" fill="#fff" fill-opacity="0.55" font-size="17" font-weight="700">10:00</text>
+      <text x="1340" y="647" fill="#fff" fill-opacity="0.35" font-size="14" text-anchor="end">BO'SH</text>
+
+      <rect x="940" y="678" width="448" height="52" rx="26" fill="#fff" fill-opacity="0.06"/>
+      <text x="972" y="711" fill="#fff" fill-opacity="0.55" font-size="17" font-weight="700">10:30</text>
+      <text x="1340" y="711" fill="#fff" fill-opacity="0.35" font-size="14" text-anchor="end">BO'SH</text>
+
+      <!-- doctor card -->
+      <rect x="940" y="748" width="448" height="44" rx="22" fill="#fff" fill-opacity="0.04"/>
+      <circle cx="966" cy="770" r="14" fill="#8CFFE3" fill-opacity="0.25"/>
+      <circle cx="966" cy="766" r="5" fill="#8CFFE3"/>
+      <path d="M956 779C956 773 960 769 966 769C972 769 976 773 976 779" fill="#8CFFE3"/>
+      <rect x="992" y="762" width="116" height="8" rx="4" fill="#fff" fill-opacity="0.4"/>
+      <rect x="992" y="776" width="76" height="6" rx="3" fill="#fff" fill-opacity="0.2"/>
+    </g>
+  </g>
+
+  <!-- queue ticket -->
+  <g transform="rotate(-4 665 540)" filter="url(#shadow)">
+    <rect x="426" y="206" width="478" height="668" rx="30" fill="#FFFDF4"/>
+    <path d="M426 236C426 219 439 206 456 206H874C891 206 904 219 904 236V306H426V236Z" fill="#0B7A75"/>
+    <text x="466" y="260" fill="#C6F24E" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" letter-spacing="4">NAVBAT</text>
+    <rect x="742" y="238" width="122" height="38" rx="19" fill="#FFFDF4" fill-opacity="0.14"/>
+    <circle cx="764" cy="257" r="6" fill="#C6F24E"/>
+    <text x="780" y="263" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">ONLAYN</text>
+
+    <text x="466" y="366" fill="#0A3C3B" fill-opacity="0.45" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="3">NAVBAT RAQAMI</text>
+    <text x="460" y="486" fill="#083C3B" font-family="Arial, Helvetica, sans-serif" font-size="126" font-weight="700" letter-spacing="-2">A-12</text>
+
+    <path d="M466 522H866" stroke="#083C3B" stroke-opacity="0.14" stroke-width="2" stroke-dasharray="8 10"/>
+
+    <text x="466" y="574" fill="#083C3B" fill-opacity="0.45" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="2">XONA</text>
+    <text x="866" y="576" fill="#0A3C3B" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" text-anchor="end">3-B</text>
+
+    <text x="466" y="628" fill="#083C3B" fill-opacity="0.45" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="2">VAQT</text>
+    <text x="866" y="630" fill="#0A3C3B" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" text-anchor="end">09:30</text>
+
+    <text x="466" y="682" fill="#083C3B" fill-opacity="0.45" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="2">SHIFOKOR</text>
+    <text x="866" y="684" fill="#0A3C3B" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" text-anchor="end">QABULXONA</text>
+
+    <path d="M466 722H866" stroke="#083C3B" stroke-opacity="0.14" stroke-width="2" stroke-dasharray="8 10"/>
+
+    <!-- qr -->
+    <g transform="translate(466 760)">
+      <rect width="142" height="142" rx="14" fill="#F4F0E2"/>
+      <g fill="#083C3B">
+        <rect x="14" y="14" width="34" height="34" rx="6"/>
+        <rect x="22" y="22" width="18" height="18" rx="3" fill="#FFFDF4"/>
+        <rect x="94" y="14" width="34" height="34" rx="6"/>
+        <rect x="102" y="22" width="18" height="18" rx="3" fill="#FFFDF4"/>
+        <rect x="14" y="94" width="34" height="34" rx="6"/>
+        <rect x="22" y="102" width="18" height="18" rx="3" fill="#FFFDF4"/>
+        <rect x="60" y="14" width="10" height="10" rx="2"/>
+        <rect x="78" y="30" width="10" height="10" rx="2"/>
+        <rect x="60" y="46" width="10" height="10" rx="2"/>
+        <rect x="96" y="60" width="10" height="10" rx="2"/>
+        <rect x="112" y="74" width="10" height="10" rx="2"/>
+        <rect x="60" y="82" width="10" height="10" rx="2"/>
+        <rect x="78" y="98" width="10" height="10" rx="2"/>
+        <rect x="96" y="112" width="10" height="10" rx="2"/>
+        <rect x="60" y="120" width="10" height="10" rx="2"/>
+        <rect x="112" y="120" width="10" height="10" rx="2"/>
+        <rect x="78" y="60" width="10" height="10" rx="2"/>
+        <rect x="60" y="60" width="10" height="10" rx="2"/>
+      </g>
+    </g>
+
+    <text x="628" y="786" fill="#083C3B" fill-opacity="0.45" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" letter-spacing="2">NAVBAT KODI</text>
+    <text x="628" y="828" fill="#083C3B" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">#A1209</text>
+
+    <circle cx="660" cy="690" r="36" fill="#0B7A75"/>
+    <path d="M644 690L655 701L677 676" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="706" y="698" fill="#0A3C3B" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">TASDIQLANDI</text>
+
+    <!-- perforation -->
+    <path d="M426 858H904" stroke="#083C3B" stroke-opacity="0.14" stroke-width="2" stroke-dasharray="8 10"/>
+  </g>
+
+  <!-- stethoscope -->
+  <g filter="url(#shadow)">
+    <path d="M1116 640C1116 700 1116 754 1074 796C1032 838 986 850 956 890" stroke="#042F2C" stroke-width="24" stroke-linecap="round"/>
+    <path d="M1116 640C1116 700 1116 754 1074 796C1032 838 986 850 956 890" stroke="#4FD1C5" stroke-opacity="0.4" stroke-width="7" stroke-linecap="round"/>
+    <path d="M1116 640C1116 600 1140 570 1178 558" stroke="#042F2C" stroke-width="18" stroke-linecap="round"/>
+    <path d="M1116 640C1116 600 1096 570 1062 556" stroke="#042F2C" stroke-width="18" stroke-linecap="round"/>
+    <circle cx="1184" cy="554" r="13" fill="#8CFFE3"/>
+    <circle cx="1056" cy="552" r="13" fill="#8CFFE3"/>
+    <circle cx="952" cy="898" r="46" fill="#042F2C"/>
+    <circle cx="952" cy="898" r="28" fill="#0E8F7E"/>
+    <circle cx="952" cy="898" r="12" fill="#8CFFE3" fill-opacity="0.5"/>
+  </g>
+
+  <!-- appointment chip -->
+  <g filter="url(#shadow)">
+    <rect x="196" y="650" width="252" height="84" rx="42" fill="#042F2C" fill-opacity="0.72" stroke="#fff" stroke-opacity="0.16"/>
+    <circle cx="238" cy="692" r="20" fill="#C6F24E"/>
+    <path d="M230 692L236 698L247 685" stroke="#0A3C2E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="270" y="686" fill="#fff" fill-opacity="0.5" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="2">KEYINGI QABUL</text>
+    <text x="270" y="712" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">09:30</text>
+  </g>
+
+  <rect x="0" y="810" width="1600" height="290" fill="#021B1A" opacity="0.1"/>
+</svg>

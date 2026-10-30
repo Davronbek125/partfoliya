@@ -19,12 +19,12 @@ export function ContactForm({ contact, siteEmail }: ContactFormProps) {
     event.preventDefault();
     const form = new FormData(event.currentTarget);
     const name = String(form.get("name") ?? "").trim();
-    const email = String(form.get("email") ?? "").trim();
+    const contactMethod = String(form.get("contact") ?? "").trim();
     const message = String(form.get("message") ?? "").trim();
 
     const subject = encodeURIComponent(`Portfolio — ${name || "Hello"}`);
     const body = encodeURIComponent(
-      `${message}\n\n— ${name}\n${email}`.trim(),
+      `${message}\n\n— ${name}\n${contactMethod}`.trim(),
     );
 
     window.location.href = `mailto:${siteEmail}?subject=${subject}&body=${body}`;
@@ -50,16 +50,24 @@ export function ContactForm({ contact, siteEmail }: ContactFormProps) {
 
         <label className="block">
           <span className="mb-2 block text-xs font-semibold uppercase tracking-[0.14em] text-ink-soft">
-            {contact.email}
+            {contact.contact}
           </span>
           <input
-            name="email"
-            type="email"
+            name="contact"
+            type="text"
             required
-            autoComplete="email"
-            placeholder={contact.emailPlaceholder}
+            minLength={3}
+            autoComplete="off"
+            placeholder={contact.contactPlaceholder}
+            aria-describedby="contact-method-hint"
             className={fieldClass}
           />
+          <span
+            id="contact-method-hint"
+            className="mt-2 block text-[11px] leading-relaxed text-ink/50"
+          >
+            {contact.contactHint}
+          </span>
         </label>
       </div>
 
@@ -99,7 +107,7 @@ export function ContactForm({ contact, siteEmail }: ContactFormProps) {
           role="status"
           className="mt-4 rounded-2xl border border-lime/40 bg-lime/15 px-4 py-3 text-sm text-ink"
         >
-          {contact.note}
+          {contact.sent}
         </p>
       ) : null}
     </form>

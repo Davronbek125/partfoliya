@@ -5,6 +5,7 @@ import "../globals.css";
 
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { AssistantWidget } from "@/components/assistant/AssistantWidget";
 import { site } from "@/content/site";
 import { isLocale, locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
@@ -82,7 +83,11 @@ export default async function LocaleLayout({
   const dict = getDictionary(locale as Locale);
 
   return (
-    <html lang={locale} className={`${inter.variable} ${spaceGrotesk.variable}`}>
+    <html
+      lang={locale}
+      data-scroll-behavior="smooth"
+      className={`${inter.variable} ${spaceGrotesk.variable}`}
+    >
       <body className="flex min-h-screen flex-col">
         <a
           href="#main"
@@ -95,6 +100,11 @@ export default async function LocaleLayout({
           {children}
         </main>
         <Footer locale={locale} dict={dict} />
+        <AssistantWidget
+          key={locale}
+          locale={locale}
+          dict={dict.assistant}
+        />
       </body>
     </html>
   );

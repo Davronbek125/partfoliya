@@ -14,6 +14,12 @@ export function generateStaticParams() {
   );
 }
 
+/**
+ * Detail sahifa statik generatsiya qilinsa ham, navigatsiya paytida
+ * `params` kutilishiga ruxsat beradi (Next 16 instant-navigation).
+ */
+export const instant = false;
+
 export async function generateMetadata({
   params,
 }: {
@@ -70,11 +76,22 @@ export default async function ProjectPage({
               {project.summary[locale]}
             </p>
           </div>
-          {project.link ? (
-            <div className="md:justify-self-end">
-              <Button href={project.link} external>
-                {dict.projects.visit} <Arrow />
-              </Button>
+          {project.repo || project.link ? (
+            <div className="flex flex-wrap gap-3 md:justify-self-end">
+              {project.repo ? (
+                <Button
+                  href={project.repo}
+                  external
+                  variant={project.link ? "outline" : "primary"}
+                >
+                  {dict.projects.github} <Arrow />
+                </Button>
+              ) : null}
+              {project.link ? (
+                <Button href={project.link} external variant="primary">
+                  {dict.projects.visit} <Arrow />
+                </Button>
+              ) : null}
             </div>
           ) : null}
         </header>
@@ -82,19 +99,24 @@ export default async function ProjectPage({
         <div className="relative mt-10 aspect-[16/9] overflow-hidden rounded-[2rem] border border-ink/10 md:mt-14">
           <div
             aria-hidden
-            className="absolute inset-0"
-            style={{ background: project.gradient }}
+            className="absolute inset-0 bg-cover bg-center"
+            style={
+              project.image
+                ? {
+                    backgroundImage: `url(${project.image})`,
+                    backgroundColor: project.accent,
+                  }
+                : { background: project.gradient }
+            }
           />
           <div
             aria-hidden
-            className="grain-overlay pointer-events-none absolute inset-0 opacity-25"
+            className="grain-overlay pointer-events-none absolute inset-0 opacity-15"
           />
-          <span
+          <div
             aria-hidden
-            className="absolute inset-0 grid place-items-center font-display text-[18vw] font-bold leading-none text-white/20"
-          >
-            {project.title}
-          </span>
+            className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/55 via-black/10 to-transparent"
+          />
           <span className="absolute bottom-5 left-5 rounded-full bg-cream/90 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-ink">
             {project.role[locale]}
           </span>

@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" fill="none" role="img" aria-label="XAUUSD gold trading bot illustration">
+  <defs>
+    <linearGradient id="bg" x1="90" y1="40" x2="1520" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#100A1D"/>
+      <stop offset="0.52" stop-color="#3A0D3F"/>
+      <stop offset="1" stop-color="#7A1D20"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(1240 120) rotate(138) scale(720 560)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFB020" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#FFB020" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="goldGlow" cx="0" cy="0" r="1" gradientTransform="translate(330 430) rotate(90) scale(260 210)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD45E" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#FFD45E" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0H0V72" stroke="#fff" stroke-opacity="0.055"/>
+    </pattern>
+    <pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#FFD45E" fill-opacity="0.18"/>
+    </pattern>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="26" stdDeviation="28" flood-color="#08030F" flood-opacity="0.55"/>
+    </filter>
+    <filter id="lineGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1100" fill="url(#bg)"/>
+  <rect width="1600" height="1100" fill="url(#grid)"/>
+  <rect width="1600" height="1100" fill="url(#dots)" opacity="0.55"/>
+  <ellipse cx="1260" cy="130" rx="620" ry="480" fill="url(#glow)"/>
+  <ellipse cx="330" cy="430" rx="300" ry="240" fill="url(#goldGlow)"/>
+
+  <!-- chart panel -->
+  <g filter="url(#shadow)">
+    <rect x="470" y="152" width="990" height="690" rx="38" fill="#0A0612" fill-opacity="0.6" stroke="#fff" stroke-opacity="0.1"/>
+    <path d="M470 208C470 177 495 152 526 152H1404C1435 152 1460 177 1460 208V252H470V208Z" fill="#fff" fill-opacity="0.035"/>
+    <text x="516" y="218" fill="#FFD45E" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" letter-spacing="1">XAU/USD</text>
+    <text x="700" y="216" fill="#fff" fill-opacity="0.5" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="2">GOLD SPOT</text>
+    <rect x="846" y="190" width="86" height="38" rx="19" fill="#FFD45E" fill-opacity="0.12" stroke="#FFD45E" stroke-opacity="0.3"/>
+    <text x="889" y="215" fill="#FFD45E" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" text-anchor="middle">H1 · H4</text>
+    <rect x="946" y="190" width="82" height="38" rx="19" fill="#fff" fill-opacity="0.08"/>
+    <text x="987" y="215" fill="#fff" fill-opacity="0.7" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" text-anchor="middle">SMC</text>
+
+    <!-- telegram plane -->
+    <g transform="translate(1330 196)">
+      <path d="M0 20L58 0L40 44L28 30L0 20Z" fill="#FFD45E" fill-opacity="0.9"/>
+      <path d="M28 30L58 0L32 36L28 30Z" fill="#C78A0A"/>
+      <path d="M-24 34H-6M-34 46H-10" stroke="#FFD45E" stroke-opacity="0.4" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- chart grid -->
+  <g stroke="#fff" stroke-opacity="0.07">
+    <path d="M510 330H1420"/>
+    <path d="M510 418H1420"/>
+    <path d="M510 506H1420"/>
+    <path d="M510 594H1420"/>
+    <path d="M510 682H1420"/>
+    <path d="M510 770H1420"/>
+    <path d="M610 286V800"/>
+    <path d="M750 286V800"/>
+    <path d="M890 286V800"/>
+    <path d="M1030 286V800"/>
+    <path d="M1170 286V800"/>
+    <path d="M1310 286V800"/>
+  </g>
+
+  <!-- candles -->
+  <g>
+    <!-- green/red body + wicks -->
+    <g stroke="#67E8A5" stroke-width="4">
+      <path d="M562 462V540"/><rect x="550" y="478" width="24" height="44" rx="5" fill="#67E8A5"/>
+      <path d="M642 420V516"/><rect x="630" y="444" width="24" height="52" rx="5" fill="#67E8A5"/>
+      <path d="M682 402V500"/><rect x="670" y="424" width="24" height="54" rx="5" fill="#67E8A5"/>
+      <path d="M762 366V472"/><rect x="750" y="394" width="24" height="56" rx="5" fill="#67E8A5"/>
+      <path d="M802 338V444"/><rect x="790" y="364" width="24" height="58" rx="5" fill="#67E8A5"/>
+      <path d="M882 352V452"/><rect x="870" y="378" width="24" height="52" rx="5" fill="#67E8A5"/>
+      <path d="M922 310V418"/><rect x="910" y="338" width="24" height="58" rx="5" fill="#67E8A5"/>
+      <path d="M1002 286V392"/><rect x="990" y="312" width="24" height="58" rx="5" fill="#67E8A5"/>
+      <path d="M1082 264V370"/><rect x="1070" y="292" width="24" height="56" rx="5" fill="#67E8A5"/>
+      <path d="M1122 248V354"/><rect x="1110" y="276" width="24" height="56" rx="5" fill="#67E8A5"/>
+      <path d="M1202 224V330"/><rect x="1190" y="252" width="24" height="56" rx="5" fill="#67E8A5"/>
+      <path d="M1242 208V314"/><rect x="1230" y="236" width="24" height="56" rx="5" fill="#67E8A5"/>
+      <path d="M1322 190V296"/><rect x="1310" y="218" width="24" height="56" rx="5" fill="#67E8A5"/>
+    </g>
+    <g stroke="#FF7A7A" stroke-width="4">
+      <path d="M602 474V552"/><rect x="590" y="492" width="24" height="42" rx="5" fill="#FF7A7A"/>
+      <path d="M722 442V534"/><rect x="710" y="462" width="24" height="50" rx="5" fill="#FF7A7A"/>
+      <path d="M842 382V482"/><rect x="830" y="404" width="24" height="54" rx="5" fill="#FF7A7A"/>
+      <path d="M962 318V420"/><rect x="950" y="342" width="24" height="54" rx="5" fill="#FF7A7A"/>
+      <path d="M1042 300V404"/><rect x="1030" y="324" width="24" height="56" rx="5" fill="#FF7A7A"/>
+      <path d="M1162 260V362"/><rect x="1150" y="284" width="24" height="54" rx="5" fill="#FF7A7A"/>
+      <path d="M1282 222V324"/><rect x="1270" y="246" width="24" height="54" rx="5" fill="#FF7A7A"/>
+    </g>
+  </g>
+
+  <!-- trend line -->
+  <path d="M548 548C630 528 680 500 740 470C810 436 860 424 930 392C1000 360 1060 336 1130 302C1200 268 1260 244 1352 198" stroke="#FFD45E" stroke-opacity="0.22" stroke-width="24" stroke-linecap="round" filter="url(#lineGlow)"/>
+  <path d="M548 548C630 528 680 500 740 470C810 436 860 424 930 392C1000 360 1060 336 1130 302C1200 268 1260 244 1352 198" stroke="#FFD45E" stroke-width="7" stroke-linecap="round" filter="url(#lineGlow)"/>
+  <path d="M1322 184L1362 194L1348 232" stroke="#FFD45E" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- signal tags -->
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="700">
+    <path d="M1210 196H1436" stroke="#67E8A5" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="8 10"/>
+    <rect x="1360" y="174" width="82" height="38" rx="19" fill="#67E8A5"/>
+    <text x="1401" y="199" fill="#072313" font-size="16" text-anchor="middle">TP</text>
+
+    <path d="M1178 242H1436" stroke="#fff" stroke-opacity="0.4" stroke-width="2" stroke-dasharray="8 10"/>
+    <rect x="1360" y="220" width="94" height="38" rx="19" fill="#fff" fill-opacity="0.9"/>
+    <text x="1407" y="245" fill="#1B0B22" font-size="14" text-anchor="middle">ENTRY</text>
+
+    <path d="M1150 292H1436" stroke="#FF7A7A" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="8 10"/>
+    <rect x="1360" y="270" width="82" height="38" rx="19" fill="#FF7A7A"/>
+    <text x="1401" y="295" fill="#2B0707" font-size="16" text-anchor="middle">SL</text>
+  </g>
+
+  <!-- gold bars -->
+  <g filter="url(#shadow)">
+    <path d="M214 486L336 440L458 486L336 532L214 486Z" fill="#FFD45E"/>
+    <path d="M214 486V530L336 576V532L214 486Z" fill="#E8B21A"/>
+    <path d="M458 486V530L336 576V532L458 486Z" fill="#B47A08"/>
+    <path d="M198 424L320 378L442 424L320 470L198 424Z" fill="#FFE79A"/>
+    <path d="M198 424V468L320 514V470L198 424Z" fill="#FFD45E"/>
+    <path d="M442 424V468L320 514V470L442 424Z" fill="#D99B12"/>
+    <path d="M232 360L336 322L440 360L336 398L232 360Z" fill="#FFF0B8"/>
+    <path d="M232 360V396L336 434V398L232 360Z" fill="#FFE79A"/>
+    <path d="M440 360V396L336 434V398L440 360Z" fill="#F0C032"/>
+  </g>
+
+  <!-- gold label -->
+  <g transform="translate(196 620)">
+    <rect width="248" height="64" rx="32" fill="#0A0612" fill-opacity="0.65" stroke="#FFD45E" stroke-opacity="0.3"/>
+    <circle cx="34" cy="32" r="8" fill="#FFD45E"/>
+    <text x="56" y="39" fill="#FFE79A" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" letter-spacing="2">XAU · GOLD</text>
+  </g>
+
+  <!-- bottom scan line -->
+  <path d="M470 818H1460" stroke="#FFD45E" stroke-opacity="0.18" stroke-width="2"/>
+  <rect x="0" y="780" width="1600" height="320" fill="#08030F" opacity="0.16"/>
+</svg>

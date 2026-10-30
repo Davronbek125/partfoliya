@@ -22,16 +22,23 @@ export function ProjectCard({ project, locale, index, dict }: ProjectCardProps) 
         <div className="relative aspect-[16/11] overflow-hidden">
           <div
             aria-hidden
-            className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-[1.06]"
-            style={{ background: project.gradient }}
+            className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-[1.06]"
+            style={
+              project.image
+                ? {
+                    backgroundImage: `url(${project.image})`,
+                    backgroundColor: project.accent,
+                  }
+                : { background: project.gradient }
+            }
           />
           <div
             aria-hidden
-            className="grain-overlay pointer-events-none absolute inset-0 opacity-25"
+            className="grain-overlay pointer-events-none absolute inset-0 opacity-20"
           />
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-x-0 bottom-0 h-[60%] bg-gradient-to-t from-black/65 via-black/15 to-transparent"
+            className="pointer-events-none absolute inset-x-0 bottom-0 h-[62%] bg-gradient-to-t from-black/75 via-black/20 to-transparent"
           />
           <span
             aria-hidden
@@ -70,11 +77,18 @@ export function ProjectCard({ project, locale, index, dict }: ProjectCardProps) 
                 </li>
               ))}
             </ul>
-            {project.year ? (
-              <span className="text-xs font-medium text-ink-soft">
-                {project.year}
-              </span>
-            ) : null}
+            <div className="flex shrink-0 items-center gap-2">
+              {project.repo ? (
+                <span className="rounded-full bg-ink px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-cream">
+                  GitHub
+                </span>
+              ) : null}
+              {project.year ? (
+                <span className="text-xs font-medium text-ink-soft">
+                  {project.year}
+                </span>
+              ) : null}
+            </div>
           </div>
         </div>
       </article>

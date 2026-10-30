@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { skillMarquee } from "@/content/skills";
 import { site } from "@/content/site";
 import type { Dictionary } from "@/i18n/get-dictionary";
@@ -23,36 +25,51 @@ export function About({ locale, about, showHeading = true }: AboutProps) {
         <div className="grid gap-14 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
           <Reveal>
             <div className="relative">
-              <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-ink/10 bg-ink">
-                <div
-                  aria-hidden
-                  className="absolute inset-0 bg-[radial-gradient(120%_90%_at_20%_10%,#ff5a3c_0%,#ff7ac3_38%,#7b5cff_72%,#14101c_100%)]"
+              <div className="group relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-ink/10 bg-ink">
+                <Image
+                  src="/images/davronbek-portrait.webp"
+                  alt={`${site.name} — ${site.location[locale]}`}
+                  fill
+                  sizes="(min-width: 1280px) 460px, (min-width: 1024px) 38vw, 100vw"
+                  className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.025]"
                 />
                 <div
                   aria-hidden
-                  className="absolute inset-0 opacity-30 mix-blend-overlay grain-overlay"
+                  className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/25 to-transparent"
+                />
+                <div
+                  aria-hidden
+                  className="absolute inset-0 bg-gradient-to-b from-ink/40 via-transparent to-transparent"
+                />
+                <div
+                  aria-hidden
+                  className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,90,60,0.22),transparent_45%,rgba(123,92,255,0.2))] mix-blend-soft-light"
+                />
+                <div
+                  aria-hidden
+                  className="grain-overlay pointer-events-none absolute inset-0 opacity-25"
                 />
                 <div className="absolute inset-0 flex flex-col justify-between p-7">
-                  <div className="flex items-center justify-between text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70">
+                  <div className="flex items-center justify-between text-[11px] font-semibold uppercase tracking-[0.2em] text-white/75">
                     <span>Portfolio</span>
                     <span>{site.copyrightYear}</span>
                   </div>
 
                   <div>
-                    <p className="font-display text-[28vw] font-bold leading-[0.72] tracking-tighter text-white/95 sm:text-[13rem] lg:text-[11rem]">
-                      {site.name.charAt(0).toUpperCase()}
-                    </p>
-                    <p className="mt-4 font-display text-xl font-semibold text-white">
+                    <p className="font-display text-2xl font-semibold text-white sm:text-3xl">
                       {site.name}
                     </p>
-                    <p className="mt-1 text-xs uppercase tracking-[0.18em] text-white/60">
+                    <p className="mt-1 text-xs uppercase tracking-[0.18em] text-white/65">
                       {site.location[locale]}
                     </p>
                   </div>
                 </div>
+                <div
+                  aria-hidden
+                  className="pointer-events-none absolute inset-0 rounded-[2rem] ring-1 ring-inset ring-white/15"
+                />
               </div>
 
-              {/* Bu yerga keyinchalik o'z rasmingizni qo'yishingiz mumkin */}
               <div className="absolute -bottom-5 -right-3 rounded-2xl border border-ink/10 bg-cream px-5 py-4 shadow-card">
                 <p className="font-display text-2xl font-bold leading-none">
                   {about.stats[0]?.value}
@@ -111,6 +128,20 @@ export function About({ locale, about, showHeading = true }: AboutProps) {
                     </li>
                   ))}
                 </ul>
+                <a
+                  href={site.github}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="group mt-5 inline-flex items-center gap-2 text-xs font-semibold text-ink transition-colors hover:text-coral"
+                >
+                  {about.githubCta}
+                  <span
+                    aria-hidden
+                    className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                  >
+                    ↗
+                  </span>
+                </a>
               </div>
             </Reveal>
           </div>

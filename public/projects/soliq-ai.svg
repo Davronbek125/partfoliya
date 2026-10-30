@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" fill="none" role="img" aria-label="Soliq AI tax bot illustration">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="60" x2="1520" y2="1060" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#04333E"/>
+      <stop offset="0.48" stop-color="#0B8F86"/>
+      <stop offset="1" stop-color="#B7F34A"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(1280 200) rotate(140) scale(700 620)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E7FFA8" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#E7FFA8" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0H0V72" stroke="#fff" stroke-opacity="0.06"/>
+    </pattern>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="28" stdDeviation="28" flood-color="#022C2C" flood-opacity="0.4"/>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1100" fill="url(#bg)"/>
+  <rect width="1600" height="1100" fill="url(#grid)"/>
+  <ellipse cx="1310" cy="180" rx="560" ry="430" fill="url(#glow)"/>
+
+  <!-- soft floating percent signs -->
+  <g fill="#fff" fill-opacity="0.07" font-family="Arial, Helvetica, sans-serif" font-weight="700">
+    <text x="120" y="250" font-size="260">%</text>
+    <text x="1260" y="960" font-size="200">%</text>
+  </g>
+
+  <!-- phone -->
+  <g transform="translate(66 0)">
+    <g transform="rotate(7 1160 540)" filter="url(#shadow)">
+    <rect x="920" y="130" width="440" height="800" rx="58" fill="#071B22"/>
+    <rect x="944" y="154" width="392" height="752" rx="42" fill="#F2F8F3"/>
+    <rect x="1030" y="166" width="220" height="18" rx="9" fill="#071B22"/>
+
+    <!-- chat header -->
+    <path d="M944 196C944 173 963 154 986 154H1294C1317 154 1336 173 1336 196V296H944V196Z" fill="#0B7A75"/>
+    <circle cx="1000" cy="234" r="30" fill="#C6F24E"/>
+    <text x="1000" y="244" fill="#04333E" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" text-anchor="middle">S</text>
+    <text x="1046" y="228" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Soliq AI</text>
+    <circle cx="1046" cy="252" r="6" fill="#C6F24E"/>
+    <text x="1062" y="259" fill="#DFFFF2" font-family="Arial, Helvetica, sans-serif" font-size="15">onlayn · 2026</text>
+    <circle cx="1288" cy="232" r="18" fill="#fff" fill-opacity="0.14"/>
+    <path d="M1280 232H1296M1288 224V240" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- chat bubbles -->
+    <g font-family="Arial, Helvetica, sans-serif">
+      <rect x="976" y="336" width="264" height="88" rx="24" fill="#fff"/>
+      <path d="M976 400L958 416L994 404" fill="#fff"/>
+      <text x="1000" y="372" fill="#50706A" font-size="15">Tushum</text>
+      <text x="1000" y="400" fill="#0A3C3B" font-size="24" font-weight="700">120 mln so'm</text>
+
+      <rect x="1096" y="450" width="212" height="70" rx="24" fill="#0B7A75"/>
+      <path d="M1308 504L1326 520L1292 508" fill="#0B7A75"/>
+      <text x="1168" y="492" fill="#fff" font-size="22" font-weight="700">Hisoblash</text>
+
+      <rect x="976" y="550" width="290" height="124" rx="24" fill="#fff"/>
+      <path d="M976 638L958 654L994 642" fill="#fff"/>
+      <text x="1000" y="588" fill="#50706A" font-size="15">Tavsiya</text>
+      <text x="1000" y="620" fill="#0A3C3B" font-size="25" font-weight="700">YATT — 4%</text>
+      <rect x="1000" y="636" width="122" height="24" rx="12" fill="#C6F24E"/>
+      <text x="1061" y="653" fill="#04333E" font-size="13" font-weight="700" text-anchor="middle">ENG MAQBUL</text>
+    </g>
+
+    <!-- input -->
+    <rect x="968" y="822" width="344" height="58" rx="29" fill="#E2EDE6"/>
+    <text x="994" y="858" fill="#7C958F" font-family="Arial, Helvetica, sans-serif" font-size="17">Savolingizni yozing...</text>
+    <circle cx="1280" cy="851" r="20" fill="#0B7A75"/>
+    <path d="M1272 851H1288M1281 842L1290 851L1281 860" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <!-- receipt -->
+  <g transform="rotate(-7 740 540)" filter="url(#shadow)">
+    <rect x="452" y="150" width="540" height="720" rx="30" fill="#FFFDF6"/>
+    <path d="M452 180C452 163 465 150 482 150H962C979 150 992 163 992 180V240H452V180Z" fill="#073B43"/>
+    <text x="492" y="208" fill="#C6F24E" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" letter-spacing="4">SOLIQ AI</text>
+    <text x="900" y="208" fill="#fff" fill-opacity="0.55" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" text-anchor="end">2026</text>
+
+    <text x="492" y="304" fill="#083C3B" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" letter-spacing="1">YILLIK TAHLIL</text>
+    <text x="492" y="336" fill="#083C3B" fill-opacity="0.45" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="2">YATT VS SELF-EMPLOYED</text>
+
+    <!-- comparison rows -->
+    <text x="492" y="410" fill="#083C3B" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="2">YATT</text>
+    <text x="936" y="410" fill="#0B7A75" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" text-anchor="end">4%</text>
+    <rect x="492" y="426" width="444" height="20" rx="10" fill="#083C3B" fill-opacity="0.08"/>
+    <rect x="492" y="426" width="250" height="20" rx="10" fill="#0B7A75"/>
+
+    <text x="492" y="500" fill="#083C3B" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="2">SELF-EMPLOYED</text>
+    <text x="936" y="500" fill="#D97706" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" text-anchor="end">LIMIT</text>
+    <rect x="492" y="516" width="444" height="20" rx="10" fill="#083C3B" fill-opacity="0.08"/>
+    <rect x="492" y="516" width="116" height="20" rx="10" fill="#F59E0B"/>
+
+    <path d="M492 576H936" stroke="#083C3B" stroke-opacity="0.14" stroke-width="2" stroke-dasharray="8 10"/>
+
+    <text x="492" y="630" fill="#083C3B" fill-opacity="0.45" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="3">TAVSIYA</text>
+    <text x="492" y="700" fill="#083C3B" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700">YATT</text>
+    <rect x="684" y="660" width="164" height="58" rx="29" fill="#C6F24E"/>
+    <text x="766" y="700" fill="#04333E" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="middle">4%</text>
+
+    <circle cx="528" cy="764" r="22" fill="#0B7A75"/>
+    <path d="M518 764L525 771L539 756" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="564" y="772" fill="#083C3B" fill-opacity="0.6" font-family="Arial, Helvetica, sans-serif" font-size="17">eng maqbul soliq rejimi</text>
+
+    <!-- barcode / perforation -->
+    <g fill="#083C3B" fill-opacity="0.18">
+      <rect x="492" y="812" width="8" height="34" rx="4"/>
+      <rect x="508" y="812" width="4" height="34" rx="2"/>
+      <rect x="520" y="812" width="12" height="34" rx="6"/>
+      <rect x="540" y="812" width="5" height="34" rx="2"/>
+      <rect x="552" y="812" width="9" height="34" rx="4"/>
+      <rect x="570" y="812" width="4" height="34" rx="2"/>
+      <rect x="582" y="812" width="14" height="34" rx="7"/>
+    </g>
+    <g fill="#FFFDF6">
+      <circle cx="470" cy="870" r="14"/>
+      <circle cx="540" cy="870" r="14"/>
+      <circle cx="610" cy="870" r="14"/>
+      <circle cx="680" cy="870" r="14"/>
+      <circle cx="750" cy="870" r="14"/>
+      <circle cx="820" cy="870" r="14"/>
+      <circle cx="890" cy="870" r="14"/>
+      <circle cx="960" cy="870" r="14"/>
+    </g>
+  </g>
+
+  <!-- shield -->
+  <g transform="translate(-64 0)">
+    <g filter="url(#shadow)">
+      <path d="M286 300C286 282 300 268 318 268H438C456 268 470 282 470 300V398C470 468 422 514 378 532C334 514 286 468 286 398V300Z" fill="#062F3A" fill-opacity="0.9" stroke="#fff" stroke-opacity="0.24"/>
+      <path d="M348 392L370 414L414 362" stroke="#C6F24E" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <!-- coins -->
+  <g filter="url(#shadow)">
+    <ellipse cx="1450" cy="790" rx="74" ry="26" fill="#E8B21A"/>
+    <ellipse cx="1450" cy="776" rx="74" ry="26" fill="#FFD45E"/>
+    <ellipse cx="1450" cy="763" rx="74" ry="26" fill="#FFE79A"/>
+    <text x="1450" y="772" fill="#7C5300" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" text-anchor="middle">SO'M</text>
+  </g>
+
+  <rect x="0" y="760" width="1600" height="340" fill="#022C2C" opacity="0.08"/>
+</svg>

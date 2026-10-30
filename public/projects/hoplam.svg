@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" fill="none" role="img" aria-label="Ho'plam coffee pre-order illustration">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="40" x2="1520" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2E1065"/>
+      <stop offset="0.5" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#FF7AC3"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(1180 180) rotate(135) scale(720 600)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD1EC" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#FFD1EC" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cup" x1="900" y1="350" x2="1200" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFDF7"/>
+      <stop offset="0.55" stop-color="#FFF1E3"/>
+      <stop offset="1" stop-color="#E8CDBD"/>
+    </linearGradient>
+    <linearGradient id="sleeve" x1="890" y1="480" x2="1210" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3B0F63"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+    <pattern id="grid" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0H0V72" stroke="#fff" stroke-opacity="0.055"/>
+    </pattern>
+    <pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#fff" fill-opacity="0.16"/>
+    </pattern>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="28" stdDeviation="30" flood-color="#1A0733" flood-opacity="0.5"/>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1100" fill="url(#bg)"/>
+  <rect width="1600" height="1100" fill="url(#grid)"/>
+  <rect width="1600" height="1100" fill="url(#dots)" opacity="0.4"/>
+  <ellipse cx="1190" cy="180" rx="660" ry="510" fill="url(#glow)"/>
+
+  <!-- pre-order chip -->
+  <g filter="url(#shadow)">
+    <rect x="620" y="118" width="354" height="72" rx="36" fill="#2E1065" fill-opacity="0.68" stroke="#fff" stroke-opacity="0.18"/>
+    <circle cx="660" cy="154" r="9" fill="#C6F24E"/>
+    <text x="684" y="161" fill="#fff" fill-opacity="0.85" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" letter-spacing="2">PRE-ORDER · OLIB KETISH</text>
+  </g>
+
+  <!-- receipt -->
+  <g transform="rotate(-6 570 520)" filter="url(#shadow)">
+    <rect x="408" y="262" width="326" height="512" rx="18" fill="#FFFDF4"/>
+    <rect x="438" y="296" width="86" height="86" rx="20" fill="#3B0F63"/>
+    <path d="M462 340C462 326 474 316 486 316C498 316 510 326 510 340C510 354 486 370 486 370C486 370 462 354 462 340Z" fill="#FFD1EC"/>
+    <circle cx="486" cy="340" r="8" fill="#3B0F63"/>
+    <text x="546" y="322" fill="#3B0F63" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" letter-spacing="3">HO'PLAM</text>
+    <text x="546" y="354" fill="#3B0F63" fill-opacity="0.45" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2">COFFEE · 2026</text>
+    <text x="546" y="386" fill="#3B0F63" fill-opacity="0.55" font-family="Arial, Helvetica, sans-serif" font-size="13">Buyurtma</text>
+    <text x="546" y="418" fill="#3B0F63" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">#042</text>
+
+    <path d="M438 444H704" stroke="#3B0F63" stroke-opacity="0.14" stroke-width="2" stroke-dasharray="8 10"/>
+
+    <text x="438" y="484" fill="#3B0F63" fill-opacity="0.45" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2">BUYURTMA</text>
+    <text x="704" y="484" fill="#3B0F63" fill-opacity="0.45" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" text-anchor="end">SUMMA</text>
+
+    <text x="438" y="524" fill="#3B0F63" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Cappuccino</text>
+    <text x="704" y="524" fill="#3B0F63" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" text-anchor="end">x1</text>
+    <text x="438" y="558" fill="#3B0F63" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Cheesecake</text>
+    <text x="704" y="558" fill="#3B0F63" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" text-anchor="end">x1</text>
+
+    <path d="M438 584H704" stroke="#3B0F63" stroke-opacity="0.14" stroke-width="2" stroke-dasharray="8 10"/>
+
+    <rect x="438" y="610" width="266" height="54" rx="27" fill="#C6F24E"/>
+    <circle cx="466" cy="637" r="14" fill="#3B0F63"/>
+    <path d="M460 637L465 642L474 631" stroke="#C6F24E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="492" y="644" fill="#3B0F63" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" letter-spacing="2">TAYYOR</text>
+
+    <!-- qr -->
+    <g transform="translate(438 690)">
+      <rect width="88" height="88" rx="10" fill="#F2EDE0"/>
+      <g fill="#3B0F63">
+        <rect x="9" y="9" width="22" height="22" rx="4"/>
+        <rect x="14" y="14" width="12" height="12" rx="2" fill="#FFFDF4"/>
+        <rect x="57" y="9" width="22" height="22" rx="4"/>
+        <rect x="62" y="14" width="12" height="12" rx="2" fill="#FFFDF4"/>
+        <rect x="9" y="57" width="22" height="22" rx="4"/>
+        <rect x="14" y="62" width="12" height="12" rx="2" fill="#FFFDF4"/>
+        <rect x="40" y="12" width="7" height="7" rx="1"/>
+        <rect x="52" y="30" width="7" height="7" rx="1"/>
+        <rect x="38" y="44" width="7" height="7" rx="1"/>
+        <rect x="58" y="58" width="7" height="7" rx="1"/>
+        <rect x="70" y="46" width="7" height="7" rx="1"/>
+        <rect x="40" y="66" width="7" height="7" rx="1"/>
+        <rect x="58" y="72" width="7" height="7" rx="1"/>
+      </g>
+    </g>
+
+    <g fill="#3B0F63" fill-opacity="0.25">
+      <rect x="546" y="704" width="6" height="30" rx="3"/>
+      <rect x="558" y="704" width="3" height="30" rx="1.5"/>
+      <rect x="566" y="704" width="9" height="30" rx="4"/>
+      <rect x="582" y="704" width="4" height="30" rx="2"/>
+      <rect x="592" y="704" width="7" height="30" rx="3"/>
+      <rect x="606" y="704" width="3" height="30" rx="1.5"/>
+      <rect x="616" y="704" width="10" height="30" rx="5"/>
+      <rect x="634" y="704" width="4" height="30" rx="2"/>
+      <rect x="644" y="704" width="8" height="30" rx="4"/>
+    </g>
+    <text x="546" y="766" fill="#3B0F63" fill-opacity="0.45" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2">PICKUP · 5 MIN</text>
+  </g>
+
+  <!-- cup -->
+  <g filter="url(#shadow)">
+    <ellipse cx="1050" cy="846" rx="230" ry="34" fill="#1A0733" fill-opacity="0.4" filter="url(#soft)"/>
+
+    <!-- steam -->
+    <g stroke="#FFD1EC" stroke-opacity="0.45" stroke-width="9" stroke-linecap="round" fill="none">
+      <path d="M980 270C950 230 990 202 966 160C946 124 966 100 986 78"/>
+      <path d="M1054 250C1024 210 1064 182 1040 140C1020 104 1040 80 1060 58"/>
+      <path d="M1128 270C1098 230 1138 202 1114 160C1094 124 1114 100 1134 78"/>
+    </g>
+
+    <!-- lid -->
+    <ellipse cx="1050" cy="360" rx="186" ry="46" fill="#FFFDF7"/>
+    <path d="M864 360C864 322 947 292 1050 292C1153 292 1236 322 1236 360H864Z" fill="#FFF7ED"/>
+    <ellipse cx="1050" cy="326" rx="118" ry="28" fill="#E8CDBD"/>
+    <rect x="1010" y="294" width="80" height="22" rx="11" fill="#3B0F63"/>
+
+    <!-- body -->
+    <path d="M886 386H1214L1160 792C1155 824 1128 846 1096 846H1004C972 846 945 824 940 792L886 386Z" fill="url(#cup)"/>
+    <path d="M904 386H1196L1180 520H920L904 386Z" fill="#fff" fill-opacity="0.25"/>
+
+    <!-- sleeve -->
+    <path d="M918 520H1182L1164 636H936L918 520Z" fill="url(#sleeve)"/>
+    <path d="M918 520H1182" stroke="#fff" stroke-opacity="0.18" stroke-width="3"/>
+    <path d="M936 636H1164" stroke="#2E1065" stroke-opacity="0.3" stroke-width="3"/>
+    <text x="1050" y="586" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700" letter-spacing="3" text-anchor="middle">HO'PLAM</text>
+    <text x="1050" y="614" fill="#FFD1EC" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="4" text-anchor="middle">COFFEE TO GO</text>
+    <g transform="translate(998 540)">
+      <ellipse cx="0" cy="0" rx="12" ry="20" fill="#FFD1EC" transform="rotate(-30)"/>
+      <path d="M-9 12C-3 6 3 -6 9 -12" stroke="#7C3AED" stroke-width="2"/>
+      <ellipse cx="34" cy="6" rx="12" ry="20" fill="#FFD1EC" transform="rotate(28 34 6)"/>
+      <path d="M43 18C37 12 31 0 25 -6" stroke="#7C3AED" stroke-width="2"/>
+    </g>
+
+    <!-- cup bottom -->
+    <ellipse cx="1050" cy="840" rx="108" ry="20" fill="#D8B9A8"/>
+    <ellipse cx="1050" cy="834" rx="108" ry="20" fill="#F4E1D3"/>
+  </g>
+
+  <!-- ready badge -->
+  <g filter="url(#shadow)">
+    <circle cx="1288" cy="690" r="86" fill="#C6F24E"/>
+    <circle cx="1288" cy="690" r="70" stroke="#2E1065" stroke-opacity="0.18" stroke-width="2" stroke-dasharray="5 10"/>
+    <path d="M1258 688L1278 708L1318 664" stroke="#2E1065" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="1288" y="748" fill="#2E1065" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="3" text-anchor="middle">TAYYOR</text>
+  </g>
+
+  <!-- beans -->
+  <g fill="#2E1065" fill-opacity="0.45">
+    <ellipse cx="330" cy="360" rx="18" ry="30" transform="rotate(-28 330 360)"/>
+    <path d="M318 380C326 370 334 350 342 340" stroke="#FFD1EC" stroke-opacity="0.5" stroke-width="3"/>
+    <ellipse cx="400" cy="820" rx="16" ry="26" transform="rotate(22 400 820)"/>
+    <path d="M389 838C397 829 405 811 411 802" stroke="#FFD1EC" stroke-opacity="0.5" stroke-width="3"/>
+    <ellipse cx="1420" cy="470" rx="16" ry="26" transform="rotate(-18 1420 470)"/>
+    <path d="M1408 486C1416 477 1424 459 1430 450" stroke="#FFD1EC" stroke-opacity="0.5" stroke-width="3"/>
+  </g>
+
+  <rect x="0" y="800" width="1600" height="300" fill="#1A0733" opacity="0.1"/>
+</svg>

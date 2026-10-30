@@ -3,20 +3,17 @@ export const site = {
   /**
    * Quyidagi ma'lumotlarni o'zingiznikiga almashtiring.
    * Butun sayt shu fayldan oziqlanadi.
-   *
-   * TODO: email, ijtimoiy tarmoq havolalari va domenni real qiymatlar bilan yangilang.
    */
-  email: "hello@davronbek.dev",
+  email: "orishboevdavronbek@gmail.com",
+  github: "https://github.com/Davronbek125",
   location: {
     uz: "Toshkent, O'zbekiston",
     en: "Tashkent, Uzbekistan",
   },
   socials: [
-    { label: "GitHub", href: "https://github.com/" },
-    { label: "Telegram", href: "https://t.me/" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/" },
+    { label: "GitHub", href: "https://github.com/Davronbek125" },
   ],
-  url: "https://davronbek.dev",
+  url: "https://partfoliya.alwaysdata.net",
   copyrightYear: 2026,
 } as const;
 

@@ -31,17 +31,18 @@
     ],
     "statsTitle": "Qisqacha",
     "stats": [
-      { "value": "3", "label": "asosiy loyiha" },
-      { "value": "60%", "label": "token tejamkorligi" },
-      { "value": "10+", "label": "texnologiya" }
+      { "value": "8", "label": "tanlangan loyiha" },
+      { "value": "21", "label": "ochiq repozitoriy" },
+      { "value": "60%", "label": "token tejamkorligi" }
     ],
     "skillsTitle": "Asosiy arsenal",
-    "skillsNote": "Kundalik ish jarayonimda ishlatadigan asosiy texnologiyalar."
+    "skillsNote": "Kundalik ish jarayonimda ishlatadigan asosiy texnologiyalar.",
+    "githubCta": "GitHub'da barcha loyihalar"
   },
   "projects": {
     "eyebrow": "Tanlangan ishlar",
     "title": "Loyihalar",
-    "description": "Har biri aniq biznes muammosini hal qiladi: logistika, soliq konsaltingi va onlayn buyurtma.",
+    "description": "Logistika, soliq, trading, ovozli AI, striming va Android — har biri aniq muammoni hal qiladigan amaliy mahsulot.",
     "viewAll": "Barcha loyihalar",
     "viewCase": "Loyihani ko'rish",
     "back": "Orqaga",
@@ -50,8 +51,9 @@
     "stack": "Texnologiyalar",
     "highlights": "Asosiy natijalar",
     "visit": "Saytga o'tish",
+    "github": "GitHub'da ko'rish",
     "listTitle": "Barcha loyihalar",
-    "listDescription": "AI agentlar, avtomatlashtirish va full-stack dasturlash bo'yicha amaliy ishlar.",
+    "listDescription": "AI agentlar, avtomatlashtirish, botlar va full-stack dasturlash bo'yicha amaliy ishlar.",
     "filterAll": "Hammasi",
     "empty": "Bu bo'limda hozircha loyiha yo'q.",
     "next": "Keyingi loyiha"
@@ -61,13 +63,15 @@
     "title": "Loyihangizni birga quramiz",
     "description": "AI agentlar, avtomatlashtirish yoki to'liq veb-mahsulot — g'oyangizni texnik talablarga aylantirish uchun yozing. 24 soat ichida javob beraman.",
     "name": "Ismingiz",
-    "email": "Email manzilingiz",
+    "contact": "Aloqa usuli",
     "message": "Xabar",
     "namePlaceholder": "Ism Familiya",
-    "emailPlaceholder": "siz@example.com",
+    "contactPlaceholder": "@username · +998 90 123 45 67",
+    "contactHint": "Telegram, telefon yoki email — o'zingizga qulay kanalni yozing.",
     "messagePlaceholder": "Loyihangiz haqida qisqacha...",
     "send": "Xabar yuborish",
-    "note": "Tugma pochta dasturingizni ochadi — hech qanday ma'lumot serverga yuborilmaydi.",
+    "note": "Tugma pochta dasturingizni ochadi va xabarni Davronbekning email manziliga tayyorlaydi.",
+    "sent": "Pochta dasturi ochildi. Xabarni yuborishni tasdiqlang.",
     "emailLabel": "Email",
     "socialLabel": "Ijtimoiy tarmoqlar",
     "locationLabel": "Manzil"
@@ -76,6 +80,26 @@
     "rights": "Barcha huquqlar himoyalangan.",
     "built": "Next.js, Three.js va GSAP bilan qurilgan",
     "backToTop": "Yuqoriga"
+  },
+  "assistant": {
+    "open": "AI yordamchi",
+    "close": "Yopish",
+    "title": "Davronbekning AI elchisi",
+    "subtitle": "Loyiha, stack va hamkorlik bo'yicha savollar",
+    "greeting": "Assalomu alaykum! Men Davronbekning AI elchisiman. Loyihangiz yoki texnik yechim haqida savol bering — yordam beraman.",
+    "placeholder": "Savolingizni yozing...",
+    "send": "Yuborish",
+    "typing": "Yozmoqda",
+    "suggestions": [
+      "Davronbek qanday loyihalar qilgan?",
+      "Qanday texnologiyalarni biladi?",
+      "Mening g'oyamni amalga oshira oladimi?",
+      "Narx va muddat qanday belgilanadi?"
+    ],
+    "disclaimer": "AI javoblari xato bo'lishi mumkin. Muhim shartlarni bevosita kelishib oling.",
+    "basicMode": "Soddalashtirilgan rejim",
+    "error": "Ulanishda xatolik yuz berdi. Qayta urinib ko'ring yoki email orqali yozing.",
+    "contact": "Bog'lanish"
   },
   "notFound": {
     "title": "Sahifa topilmadi",

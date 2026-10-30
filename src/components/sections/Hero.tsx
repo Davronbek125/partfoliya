@@ -127,6 +127,18 @@ export function Hero({ locale, hero }: HeroProps) {
               </span>
               Next.js · Three.js · GSAP
             </span>
+            <a
+              href={site.github}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="inline-flex items-center gap-2 transition-colors hover:text-ink"
+            >
+              <span aria-hidden className="text-ink">
+                ◈
+              </span>
+              GitHub
+              <span aria-hidden>↗</span>
+            </a>
           </div>
         </div>
 

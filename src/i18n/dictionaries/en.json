@@ -31,17 +31,18 @@
     ],
     "statsTitle": "At a glance",
     "stats": [
-      { "value": "3", "label": "core projects" },
-      { "value": "60%", "label": "token savings" },
-      { "value": "10+", "label": "technologies" }
+      { "value": "8", "label": "selected projects" },
+      { "value": "21", "label": "public repositories" },
+      { "value": "60%", "label": "token savings" }
     ],
     "skillsTitle": "Core arsenal",
-    "skillsNote": "The main technologies I use in my day-to-day workflow."
+    "skillsNote": "The main technologies I use in my day-to-day workflow.",
+    "githubCta": "All projects on GitHub"
   },
   "projects": {
     "eyebrow": "Selected work",
     "title": "Projects",
-    "description": "Each one solves a concrete business problem: logistics, tax consulting and online ordering.",
+    "description": "Logistics, tax, trading, voice AI, streaming and Android — hands-on products that each solve a concrete problem.",
     "viewAll": "All projects",
     "viewCase": "View project",
     "back": "Back",
@@ -50,8 +51,9 @@
     "stack": "Stack",
     "highlights": "Key outcomes",
     "visit": "Visit website",
+    "github": "View on GitHub",
     "listTitle": "All projects",
-    "listDescription": "Hands-on work across AI agents, automation and full-stack development.",
+    "listDescription": "Hands-on work across AI agents, automation, bots and full-stack development.",
     "filterAll": "All",
     "empty": "No projects in this category yet.",
     "next": "Next project"
@@ -61,13 +63,15 @@
     "title": "Let's build your product together",
     "description": "AI agents, automation or a complete web product — write to me and we will turn your idea into technical requirements. I reply within 24 hours.",
     "name": "Your name",
-    "email": "Your email",
+    "contact": "Contact method",
     "message": "Message",
     "namePlaceholder": "Full name",
-    "emailPlaceholder": "you@example.com",
+    "contactPlaceholder": "@username · +998 90 123 45 67",
+    "contactHint": "Telegram, phone or email — use whichever is convenient for you.",
     "messagePlaceholder": "Tell me briefly about your project...",
     "send": "Send message",
-    "note": "This opens your email app — nothing is sent to a server.",
+    "note": "This opens your email app with the message addressed to Davronbek.",
+    "sent": "Your email app is open. Please confirm sending the message.",
     "emailLabel": "Email",
     "socialLabel": "Social",
     "locationLabel": "Location"
@@ -76,6 +80,26 @@
     "rights": "All rights reserved.",
     "built": "Built with Next.js, Three.js and GSAP",
     "backToTop": "Back to top"
+  },
+  "assistant": {
+    "open": "AI assistant",
+    "close": "Close",
+    "title": "Davronbek's AI ambassador",
+    "subtitle": "Questions about projects, stack and collaboration",
+    "greeting": "Hello! I am Davronbek's AI ambassador. Ask me about your project or a technical solution — I am here to help.",
+    "placeholder": "Type your question...",
+    "send": "Send",
+    "typing": "Typing",
+    "suggestions": [
+      "What projects has Davronbek built?",
+      "Which technologies does he know?",
+      "Can he build my idea?",
+      "How are price and timeline set?"
+    ],
+    "disclaimer": "AI answers can be wrong. Confirm important terms directly.",
+    "basicMode": "Basic mode",
+    "error": "The connection failed. Please try again or reach out by email.",
+    "contact": "Get in touch"
   },
   "notFound": {
     "title": "Page not found",

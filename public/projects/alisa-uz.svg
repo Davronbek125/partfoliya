@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" fill="none" role="img" aria-label="Alisa-UZ voice assistant illustration">
+  <defs>
+    <linearGradient id="bg" x1="60" y1="40" x2="1540" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#06263F"/>
+      <stop offset="0.48" stop-color="#1D4FB0"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(980 420) rotate(90) scale(560 520)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7FF4FF" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#7FF4FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="metal" x1="890" y1="220" x2="1070" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="0.45" stop-color="#D7E8FF"/>
+      <stop offset="1" stop-color="#8FB6F2"/>
+    </linearGradient>
+    <linearGradient id="stand" x1="980" y1="600" x2="980" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E6F1FF"/>
+      <stop offset="1" stop-color="#91B6EC"/>
+    </linearGradient>
+    <pattern id="grid" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0H0V72" stroke="#fff" stroke-opacity="0.055"/>
+    </pattern>
+    <pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#fff" fill-opacity="0.18"/>
+    </pattern>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="28" stdDeviation="30" flood-color="#061324" flood-opacity="0.5"/>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1100" fill="url(#bg)"/>
+  <rect width="1600" height="1100" fill="url(#grid)"/>
+  <rect width="1600" height="1100" fill="url(#dots)" opacity="0.35"/>
+  <ellipse cx="980" cy="440" rx="620" ry="560" fill="url(#glow)"/>
+
+  <!-- orbit rings -->
+  <g stroke="#fff" fill="none">
+    <circle cx="980" cy="500" r="260" stroke-opacity="0.12"/>
+    <circle cx="980" cy="500" r="360" stroke-opacity="0.1"/>
+    <circle cx="980" cy="500" r="470" stroke-opacity="0.07"/>
+    <circle cx="980" cy="500" r="214" stroke="#C6F24E" stroke-opacity="0.5" stroke-width="3" stroke-dasharray="4 18"/>
+  </g>
+
+  <!-- sound waves -->
+  <g stroke="#9DEBFF" stroke-linecap="round">
+    <path d="M660 380C612 430 612 570 660 620" stroke-opacity="0.42" stroke-width="10"/>
+    <path d="M610 340C538 410 538 590 610 660" stroke-opacity="0.26" stroke-width="8"/>
+    <path d="M560 300C464 390 464 610 560 700" stroke-opacity="0.14" stroke-width="6"/>
+    <path d="M1300 380C1348 430 1348 570 1300 620" stroke-opacity="0.42" stroke-width="10"/>
+    <path d="M1350 340C1422 410 1422 590 1350 660" stroke-opacity="0.26" stroke-width="8"/>
+    <path d="M1400 300C1496 390 1496 610 1400 700" stroke-opacity="0.14" stroke-width="6"/>
+  </g>
+
+  <!-- chat bubble left -->
+  <g filter="url(#shadow)">
+    <rect x="196" y="268" width="336" height="106" rx="30" fill="#071A32" fill-opacity="0.72" stroke="#fff" stroke-opacity="0.14"/>
+    <path d="M226 372L206 398L264 374" fill="#071A32" fill-opacity="0.72"/>
+    <circle cx="246" cy="320" r="18" fill="#C6F24E"/>
+    <path d="M240 312V328M246 310V330M252 314V326" stroke="#06263F" stroke-width="3" stroke-linecap="round"/>
+    <text x="280" y="316" fill="#fff" fill-opacity="0.55" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="2">ALISA-UZ</text>
+    <text x="280" y="346" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Salom, Alisa!</text>
+  </g>
+
+  <!-- chat bubble right -->
+  <g filter="url(#shadow)">
+    <rect x="1136" y="704" width="268" height="92" rx="28" fill="#C6F24E"/>
+    <path d="M1370 782L1394 804L1342 786" fill="#C6F24E"/>
+    <g stroke="#123A2A" stroke-width="4" stroke-linecap="round">
+      <path d="M1170 750V738"/>
+      <path d="M1188 756V732"/>
+      <path d="M1206 762V726"/>
+      <path d="M1224 756V732"/>
+      <path d="M1242 748V740"/>
+    </g>
+    <text x="1268" y="758" fill="#123A2A" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">Eshityapman</text>
+  </g>
+
+  <!-- microphone -->
+  <g filter="url(#shadow)">
+    <ellipse cx="980" cy="842" rx="210" ry="32" fill="#04101E" fill-opacity="0.45" filter="url(#soft)"/>
+    <rect x="934" y="612" width="92" height="170" rx="46" fill="url(#stand)"/>
+    <rect x="920" y="760" width="120" height="30" rx="15" fill="#BFD8FA"/>
+    <ellipse cx="980" cy="810" rx="118" ry="26" fill="#9FC3F4"/>
+
+    <rect x="868" y="218" width="224" height="360" rx="112" fill="url(#metal)"/>
+    <rect x="890" y="242" width="42" height="276" rx="21" fill="#fff" fill-opacity="0.55"/>
+    <g stroke="#6F93C9" stroke-opacity="0.55">
+      <path d="M922 300H1038"/>
+      <path d="M910 330H1050"/>
+      <path d="M905 360H1055"/>
+      <path d="M905 390H1055"/>
+      <path d="M910 420H1050"/>
+      <path d="M922 450H1038"/>
+      <path d="M934 480H1026"/>
+      <path d="M946 510H1014"/>
+    </g>
+    <path d="M868 420C868 503 918 578 980 578C1042 578 1092 503 1092 420V360H868V420Z" fill="#7C3AED" fill-opacity="0.14"/>
+    <rect x="944" y="190" width="72" height="42" rx="21" fill="#C6F24E"/>
+    <circle cx="980" cy="211" r="7" fill="#123A2A"/>
+  </g>
+
+  <!-- safety badge -->
+  <g filter="url(#shadow)">
+    <path d="M350 698C350 672 371 651 397 651H477C503 651 524 672 524 698V758C524 814 489 850 437 868C385 850 350 814 350 758V698Z" fill="#071A32" fill-opacity="0.78" stroke="#fff" stroke-opacity="0.16"/>
+    <path d="M408 752L428 772L468 730" stroke="#C6F24E" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="437" y="818" fill="#fff" fill-opacity="0.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="2" text-anchor="middle">SAFE</text>
+  </g>
+
+  <!-- game badge -->
+  <g filter="url(#shadow)">
+    <rect x="1166" y="248" width="154" height="92" rx="28" fill="#071A32" fill-opacity="0.78" stroke="#fff" stroke-opacity="0.16"/>
+    <g transform="translate(1188 274)">
+      <rect width="46" height="32" rx="14" fill="#C6F24E"/>
+      <path d="M13 16H23M18 11V21" stroke="#071A32" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="32" cy="12" r="3" fill="#071A32"/>
+      <circle cx="37" cy="20" r="3" fill="#071A32"/>
+    </g>
+    <text x="1248" y="300" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700">GAMES</text>
+  </g>
+
+  <!-- waveform -->
+  <g transform="translate(560 900)" fill="#9DEBFF">
+    <rect width="10" height="34" rx="5" fill-opacity="0.35"/>
+    <rect x="22" width="10" height="62" rx="5" y="-14" fill-opacity="0.55"/>
+    <rect x="44" width="10" height="90" rx="5" y="-28" fill-opacity="0.8"/>
+    <rect x="66" width="10" height="48" rx="5" y="-7" fill-opacity="0.45"/>
+    <rect x="88" width="10" height="112" rx="5" y="-39" fill="#C6F24E"/>
+    <rect x="110" width="10" height="66" rx="5" y="-16" fill-opacity="0.6"/>
+    <rect x="132" width="10" height="38" rx="5" y="-2" fill-opacity="0.35"/>
+    <rect x="154" width="10" height="84" rx="5" y="-25" fill-opacity="0.75"/>
+    <rect x="176" width="10" height="54" rx="5" y="-10" fill-opacity="0.5"/>
+    <rect x="198" width="10" height="104" rx="5" y="-35" fill-opacity="0.9"/>
+    <rect x="220" width="10" height="44" rx="5" y="-5" fill-opacity="0.4"/>
+    <rect x="242" width="10" height="72" rx="5" y="-19" fill-opacity="0.65"/>
+    <rect x="264" width="10" height="30" rx="5" y="2" fill-opacity="0.3"/>
+    <rect x="286" width="10" height="94" rx="5" y="-30" fill="#C6F24E"/>
+    <rect x="308" width="10" height="58" rx="5" y="-12" fill-opacity="0.55"/>
+    <rect x="330" width="10" height="40" rx="5" y="-3" fill-opacity="0.35"/>
+    <rect x="352" width="10" height="82" rx="5" y="-24" fill-opacity="0.75"/>
+    <rect x="374" width="10" height="50" rx="5" y="-8" fill-opacity="0.45"/>
+    <rect x="396" width="10" height="108" rx="5" y="-37" fill-opacity="0.85"/>
+    <rect x="418" width="10" height="36" rx="5" fill-opacity="0.3"/>
+  </g>
+
+  <!-- sparkles -->
+  <g fill="#C6F24E">
+    <path d="M742 226L750 248L772 256L750 264L742 286L734 264L712 256L734 248L742 226Z" fill-opacity="0.9"/>
+    <path d="M1240 560L1245 574L1259 579L1245 584L1240 598L1235 584L1221 579L1235 574L1240 560Z" fill-opacity="0.75"/>
+    <circle cx="312" cy="522" r="6" fill-opacity="0.7"/>
+    <circle cx="1480" cy="470" r="6" fill-opacity="0.55"/>
+  </g>
+
+  <rect x="0" y="800" width="1600" height="300" fill="#04101E" opacity="0.12"/>
+</svg>
